@@ -1,0 +1,11 @@
+{
+    "config.yml": [
+        {
+            "operation": "PASTE",
+            "lines": 15,
+            "keyStrokeTimeStamp": "Wed Mar 24 2021 21:48:26",
+            "keyStrokeInfo": "version: 2.1 # Use version 2.1 to enable orb usage.\r\n\r\norbs:\r\n  win: circleci/windows@2.2.0 # The Windows orb give you everything you need to start using the Windows executor.\r\n\r\njobs:\r\n  build: # name of your job\r\n    executor:\r\n      name: win/default # executor type\r\n      size: \"medium\" # resource class, can be \"medium\", \"large\", \"xlarge\", \"2xlarge\", defaults to \"medium\" if not specified\r\n\r\n    steps:\r\n      # Commands are run in a Windows virtual machine environment\r\n      - checkout\r\n      - run: Write-Host 'Hello, Windows'",
+            "position": "1,1"
+        }
+    ]
+}
